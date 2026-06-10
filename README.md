@@ -156,12 +156,12 @@ Atualmente a ferramenta:
 
 ### Melhorias Planejadas
 
-   - [] Tratamento completo de registros CNAME.
-   - [] Processamento paralelo para grnades wordlists.
-   - [] Melhorias na identificação de servidores web.
-   - [] Integração com fontes públicas de OSINT.
-   - [] Exportação dos resultados para CSV
-   - [] Implementação de logs de execução.
+   - [ ] Tratamento completo de registros CNAME.
+   - [ ] Processamento paralelo para grandes wordlists.
+   - [ ] Melhorias na identificação de servidores web.
+   - [ ] Integração com fontes públicas de OSINT.
+   - [ ] Exportação dos resultados para CSV
+   - [ ] Implementação de logs de execução.
 
 ---
 
