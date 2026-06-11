@@ -18,7 +18,7 @@ A ferramenta realiza a enumeração de subdomínios a partir de uma wordlist, va
    - Aplicar conceitos de DNS e protocolos HTTP/HTTPS.
    - Exercitar manipulação de dados em ambiente Linux.
    - Desenvolver habilidades de coleta e organização de informações.
-   - Produzir relátorios estruturados a partir de dados obtidos automaticamente.
+   - Produzir relatórios estruturados a partir de dados obtidos automaticamente.
 
 ---
 
