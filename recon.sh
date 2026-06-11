@@ -1,6 +1,6 @@
 #!/bin/bash
 #=================================================================================================================
-#Ferramenta: Automated recon Tool (ART)
+#Ferramenta: Asset recon Tool (ART)
 #Descrição: Enumeração de subdomínios via DNS e validação de Headers HTTP/HTTPS.
 #Autor: Almir (almirlab)
 #Uso: ./recon.sh <domini_alvo> <arquivo_wordlist>
@@ -35,11 +35,11 @@ while read -r sub; do
 		continue
 
 	else
-        HTTP_RESPONSE=$(curl -s -I -A "$USER_AGENT" --connect-timeout 3 "https://$DOMINIO" < /dev/null)
+        HTTP_RESPONSE=$(curl -s -I -A "$USER_AGENT" --connect-timeout 3 "https://$DOMINIO")
         STATUS=$(echo "$HTTP_RESPONSE" | grep -i "HTTP/" | awk '{print $2}' | head -n 1)
         SERVER=$(echo "$HTTP_RESPONSE" | grep -i "SERVER" | awk '{print $2}' | tr -d '\r' | head -n 1)
         if [ -z "$STATUS" ]; then
-            HTTP_RESPONSE=$(curl -s -I -A "$USER_AGENT" --connect-timeout 3 "http://$DOMINIO" < /dev/null)
+            HTTP_RESPONSE=$(curl -s -I -A "$USER_AGENT" --connect-timeout 3 "http://$DOMINIO")
             STATUS=$(echo "$HTTP_RESPONSE" | grep -i "HTTP/" | awk '{print $2}' | head -n 1)
             SERVER=$(echo "$HTTP_RESPONSE" | grep -i "SERVER" | awk '{print $2}' | tr -d '\r' | head -n 1)
         fi

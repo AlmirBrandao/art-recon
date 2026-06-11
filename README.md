@@ -101,7 +101,7 @@ Exemplo:
 
 ## Exemplo de Saída
 ```bash
-DOMINIO | IP | STATUS | HTTP | SERVIDOR
+DOMINIO | IP | STATUS HTTP | SERVIDOR
 
 www.exemplo.com.br | 104.21.15.30 | 200 | cloudflare
 api.exemplo.com.br | 172.67.50.10 | 403 | nginx
